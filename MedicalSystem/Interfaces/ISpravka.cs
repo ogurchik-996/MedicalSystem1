@@ -15,5 +15,7 @@ namespace MedicalSystem.Interfaces
 
         decimal CalculatePrice();
 
+        string GetShortInfo();
+
     }
 }

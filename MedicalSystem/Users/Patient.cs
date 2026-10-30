@@ -9,12 +9,15 @@ namespace MedicalSystem.Users
         public string Name { get; set; }
         public string Surname { get; set; }
         public string PhoneNumber { get; set; }
+        public string BloodType { get; set; }
+        public string Email { get; set; } = "";
 
-        public Patient(string name, string surname, string phoneNumber)
+        public Patient(string name, string surname, string phoneNumber, string bloodType)
         {
             Name = name;
             Surname = surname;
             PhoneNumber = phoneNumber;
+            BloodType = bloodType;
         }
 
         public void DisplayInfo()

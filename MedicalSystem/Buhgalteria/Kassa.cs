@@ -16,5 +16,14 @@ namespace MedicalSystem.Buhgalteria
             }
             return total;
         }
+
+        public void PrintCheck(List<ISpravka> spravkas)
+        {
+            foreach (var spravka in spravkas)
+            {
+                Console.WriteLine(spravka.GetShortInfo());
+            }
+            Console.WriteLine($"Итого: {Total(spravkas)}");
+        }
     }
 }

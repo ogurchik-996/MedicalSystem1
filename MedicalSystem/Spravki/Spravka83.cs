@@ -23,5 +23,10 @@ namespace MedicalSystem.Spravki
         {
             return Price;
         }
+
+        public string GetShortInfo()
+        {
+            return $"{SpravkaName}: {CalculatePrice()}";
+        }
     }
 }
